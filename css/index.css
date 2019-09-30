@@ -1,52 +1,63 @@
 html {
-  margin: auto;
-  background-image: url('../general_background.png');
-  background-attachment: fixed;
+	margin: auto;
+	background-image: url('../general_background.png');
+	background-attachment: fixed;
 }
 
 body {
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .pacifico {
-  font-family: 'Pacifico', cursive;
+	font-family: 'Pacifico', cursive;
 }
 
 .saira-stencil {
-  font-family: 'Saira Stencil One', cursive;
+	font-family: 'Saira Stencil One', cursive;
 }
 
 .clearfix {
-  overflow: auto;
-  zoom: 1;
+	overflow: auto;
+	zoom: 1;
 }
 
 .container {
-  display: -webkit-flex;
-  display: flex;
+	display: -webkit-flex;
+	display: flex;
 }
 
 .initial {
-  -webkit-flex: initial;
-  flex: initial;
-  width: 200px;
-  min-width: 100px;
+	-webkit-flex: initial;
+	flex: initial;
+	width: 200px;
+	min-width: 100px;
 }
 
 .none {
-  -webkit-flex: none;
-  flex: none;
-  width: 200px;
+	-webkit-flex: none;
+	flex: none;
+	width: 200px;
 }
 
 .flex1 {
-  -webkit-flex: 1;
-  flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
 }
 
 .flex2 {
-  -webkit-flex: 2;
-  flex: 2;
+	-webkit-flex: 2;
+	flex: 2;
 }
+
+#previous-year,
+#following-year {
+	font-size: 120%;
+}
+
+/* #previous-year:hover, */
+/* #following-year:hover { */
+	/* color: #FF0; */
+	/* cursor: pointer; */
+/* } */
