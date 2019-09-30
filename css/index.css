@@ -8,13 +8,22 @@ body {
 	width: 70%;
 	margin: 0 auto;
 	text-align: center;
+	margin-top: 1em !important;
+	padding: 2%;
 }
 
-.pacifico { font-family: 'Pacifico', cursive; }
+.pacifico {
+	font-family: 'Pacifico', cursive;
+}
 
-.saira-stencil { font-family: 'Saira Stencil One', cursive; }
+.saira-stencil {
+	font-family: 'Saira Stencil One', cursive;
+}
 
-.clearfix { overflow: auto; zoom: 1; }
+.clearfix {
+	overflow: auto;
+	zoom: 1;
+}
 
 .container {
 	display: -webkit-flex;
@@ -34,10 +43,19 @@ body {
 	width: 200px;
 }
 
-.flex1 { -webkit-flex: 1; flex: 1; }
+.flex1 {
+	-webkit-flex: 1;
+	flex: 1;
+}
 
-.flex2 { -webkit-flex: 2; flex: 2; }
+.flex2 {
+	-webkit-flex: 2;
+	flex: 2;
+}
 
-#previous-year, #following-year { font-size: 120%; }
+#previous-year,
+#following-year {
+	font-size: 120%;
+}
 
 /* #previous-year:hover, #following-year:hover { color: #FF0; cursor: pointer; } */

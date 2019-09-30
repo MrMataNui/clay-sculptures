@@ -23,11 +23,11 @@ function onClick(date) {
 
 function yearChange(date) {
 	const getYears = [2019];
-	let number = $('#date2019 n').html();
+	let number = $('#date2019 num').html();
 	number = parseInt($.trim(number));
 	switch (date) {
 		case 'previous-year':		if (getYears.includes(number - 1)) { number--; }		break;
 		case 'following-year':	if (getYears.includes(number + 1)) { number++; }	break;
 	}
-	$(`#date2019 n`).html(number);
+	$('#date2019 num').html(number);
 }
