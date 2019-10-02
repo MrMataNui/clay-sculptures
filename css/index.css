@@ -12,6 +12,40 @@ body {
 	padding: 2%;
 }
 
+.de {
+	display: none;
+}
+
+.en {
+	display: block;
+}
+
+/* #months .selected .de,
+#months .selected .en {
+	height: 10%;
+} */
+
+#date2019 h2 {
+	height: 2.5em;
+}
+
+.flex-container {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+button[id^='lang-'] {
+	background-color: #8a5be2;
+	border-color: #8a2be2;
+	border-width: 1px;
+	height: 3em;
+	width: 6.5em;
+}
+button[id^='lang-']:hover {
+	cursor: pointer;
+}
+
 .pacifico {
 	font-family: 'Pacifico', cursive;
 }
@@ -53,9 +87,13 @@ body {
 	flex: 2;
 }
 
-#previous-year,
-#following-year {
+span[id$='-year'] {
 	font-size: 120%;
 }
 
+[id^='Inktober-day'] {
+	cursor: pointer;
+	width: 70%;
+	margin: 0 auto;
+}
 /* #previous-year:hover, #following-year:hover { color: #FF0; cursor: pointer; } */

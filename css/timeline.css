@@ -1,14 +1,18 @@
-* { margin: 0; padding: 0; }
+* {
+	margin: 0;
+	padding: 0;
+}
 
 body {
 	background: #222;
 	font-family: Georgia, serif;
-	color: #FFF;
+	color: #fff;
 	font-size: 14px;
 }
 
-a {
-	color: #FFC;
+a,
+#dates li div {
+	color: #ffc;
 	text-decoration: none;
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
@@ -16,18 +20,37 @@ a {
 	-ms-transition: 0.5s;
 	transition: 0.5s;
 }
+#dates li div {
+	cursor: pointer;
+}
 
-ul h2, a:hover, a.selected { color: #FC0; }
+ul h2,
+ul h3,
+a:hover,
+a.selected,
+#dates li div:hover,
+#dates li div.selected {
+	color: #fc0;
+}
 
-h1, h2, h4, h5, h6 {
+h1,
+h2,
+h4,
+h5,
+h6 {
 	text-align: center;
-	color: #CCC;
+	color: #ccc;
 	text-shadow: #000 1px 1px 2px;
 	margin-bottom: 5px;
 }
 
-h1 { font-size: 18px; }
-h2 { font-size: 14px; }
+h1 {
+	font-size: 18px;
+}
+
+h2 {
+	font-size: 14px;
+}
 
 .sociales {
 	text-align: center;
@@ -60,34 +83,47 @@ h2 { font-size: 14px; }
 	/* background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/biggerdot.png') left center no-repeat; */
 }
 
-#dates a {
+#dates a,
+#dates div {
 	line-height: 38px;
 	padding-bottom: 10px;
 }
 
-li#date2019, #dates .selected { font-size: 38px; }
+li#date2019,
+#dates .selected {
+	font-size: 38px;
+}
 
-li#date2019 { width: 8em; color: #C0F; }
+li#date2019 {
+	width: 8em;
+	color: #c0f;
+}
 
-#issues {
+#months {
 	width: 400px;
 	height: 600px;
 	overflow: hidden;
 	float: left;
 }
 
-#issues li {
+#months li {
 	max-width: 300px;
 	/* // width: 400px; */
 	height: 600px;
 	list-style: none;
 	/* text-align: center; // add */
-
 }
 
-li.deselected { display: none; }
+li[id^='2019']:not(.selected) {
+	display: none;
+}
 
-#issues li.selected img {
+li[id^='2019'].selected {
+	display: block;
+}
+
+/* #months li img, */
+#months li.selected img {
 	-webkit-transform: scale(1.1, 1.1);
 	-moz-transform: scale(1.1, 1.1);
 	-o-transform: scale(1.1, 1.1);
@@ -95,11 +131,11 @@ li.deselected { display: none; }
 	transform: scale(1.1, 1.1);
 }
 
-#issues li img {
+#months li img {
 	/* // float: left; */
 	/* width: 200px; // add */
 	margin: 10px 30px 10px 50px;
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
+	-ms-filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)';
 	/* IE 8 */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF);
 	/* IE 6 & 7 */
@@ -116,14 +152,14 @@ li.deselected { display: none; }
 	transform: scale(0.7, 0.7);
 }
 
-#issues li h1 {
-	color: #FC0;
+#months li h1 {
+	color: #fc0;
 	font-size: 48px;
 	text-align: center;
 	text-shadow: #000 1px 1px 2px;
 }
 
-#issues li p {
+#months li p {
 	font-size: 14px;
 	margin: 10px 20px;
 	font-weight: normal;
@@ -131,7 +167,7 @@ li.deselected { display: none; }
 	text-shadow: #000 1px 1px 2px;
 }
 
-#grad_top, #grad_bottom {
+[id^='grad_'] {
 	width: 500px;
 	height: 80px;
 	position: absolute;
@@ -147,7 +183,8 @@ li.deselected { display: none; }
 	/* background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_bottom.png') repeat-x; */
 }
 
-#next, #prev {
+#next,
+#prev {
 	position: absolute;
 	left: 45%;
 	/* // left: 55%; */
@@ -160,7 +197,10 @@ li.deselected { display: none; }
 	overflow: hidden;
 }
 
-#next:hover, #prev:hover { background-position: 0 0; }
+#next:hover,
+#prev:hover {
+	background-position: 0 0;
+}
 
 #next {
 	bottom: 0;
@@ -172,4 +212,7 @@ li.deselected { display: none; }
 	/* background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/prev_v.png'); */
 }
 
-#next.disabled, #prev.disabled { opacity: 0.2; }
+#next.disabled,
+#prev.disabled {
+	opacity: 0.2;
+}

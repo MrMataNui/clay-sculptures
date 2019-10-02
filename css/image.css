@@ -18,14 +18,12 @@
 	height: 35%;
 }
 
-#four-armed-test,
-#four-armed-test2 {
+[id^='four-armed-test'] {
 	width: 40%;
 	height: 35%;
 }
 
-#sea-creature,
-#sea-creature-initial {
+[id^='sea-creature'] {
 	width: 50%;
 	height: 35%;
 }
