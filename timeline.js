@@ -1,7 +1,7 @@
 $(() => {
 	// initialClass();
 
-	$('[class^=Inktober-day-de]').after('<br />');
+	$('[class^=Inktober-day]').after('<br />');
 
 	$('[id^=2019]').click(function() {
 		onClick($(this));
