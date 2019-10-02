@@ -23,9 +23,9 @@
 	height: 35%;
 }
 
-#morgan,
-[id^='sea-creature'],
-[id^='Inktober'] {
+img#morgan,
+img[id^='sea-creature'],
+img[id^='Inktober'] {
 	width: 50%;
 	height: 35%;
 }

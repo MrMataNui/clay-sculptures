@@ -134,7 +134,7 @@ li[id^='2019'].selected {
 #months li img {
 	/* // float: left; */
 	/* width: 200px; // add */
-	margin: 10px 30px 10px 50px;
+	margin: 10px auto;
 	-ms-filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)';
 	/* IE 8 */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF);
