@@ -3,12 +3,19 @@ $(() => {
 
 	// initialClass();
 
-	$('[id$=Inktober]').css('display', 'none');
-	const inktoberList = [1];
-	for (let day in inktoberList) {
-		day = inktoberList[day];
-		$(`#day-${day}-Inktober`).css('display', 'block');
-	}
+	$('[id$=Inktober]').each(function() {
+		const inktoberList = [1];
+		let length = 0;
+		for (let day in inktoberList) {
+			day = inktoberList[day];
+			if ($(this).not(`#day-${day}-Inktober`).length) {
+				length++;
+			}
+		}
+		if (length === inktoberList.length) {
+			$(this).css('display', 'none');
+		}
+	});
 
 	$('[class^=Inktober-day-de]').after('<br />');
 	$('#lang-en').click(() => langChange('en'));
