@@ -77,9 +77,17 @@ span[id$='-year'] {
 }
 
 [id^='Inktober-day'] {
-	cursor: pointer;
 	width: 70%;
 	margin: 0 auto;
+}
+
+[id$='-Inktober'] {
+	cursor: pointer;
+	padding: 0 22px;
+}
+
+[id$='-Inktober']:hover {
+	border: 1px solid white;
 }
 
 /* #previous-year:hover, #following-year:hover { color: #FF0; cursor: pointer; } */

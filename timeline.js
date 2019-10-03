@@ -6,16 +6,16 @@ $(() => {
 	});
 
 	$('[class^=Inktober-day]').css('display', 'none');
-	$('[id^=Inktober-day]').click(function() {
-		inktober($(this));
+	$('[id$=-Inktober]').click(function() {
+		inktober($(this).children(':first'));
 	});
 
 	const week = 1;
 	$('[id^=Week]').each(function() {
-		inktoberWeeks($(this), week);
+		inktoberImg($(this), week, ['#Week', '']);
 	});
 	$('[id$=Inktober]').each(function() {
-		inktoberDays($(this), week);
+		inktoberImg($(this), week * 7, ['#day-', '-Inktober']);
 	});
 
 	// $('[id$=-year]').css('cursor', 'pointer');
@@ -30,23 +30,11 @@ function inktober(location) {
 	$(`div.${id}`).css('display', display);
 }
 
-function inktoberWeeks(location, week) {
-	let length = 0;
-	for (let i = 0; i < week; i++) {
-		if (location.not(`#Week${i + 1}`).length) {
-			length++;
-		}
-	}
-	if (length === week) {
-		location.css('display', 'none');
-	}
-}
-
-function inktoberDays(location, week) {
-	const max = week * 7;
+function inktoberImg(location, max, getPlace) {
 	let length = 0;
 	for (let i = 0; i < max; i++) {
-		if (location.not(`#day-${i + 1}-Inktober`).length) {
+		let locationID = getPlace[0] + (i + 1) + getPlace[1];
+		if (location.not(locationID).length) {
 			length++;
 		}
 	}
