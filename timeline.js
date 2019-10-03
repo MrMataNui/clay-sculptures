@@ -29,7 +29,7 @@ function inktober(location) {
 }
 
 function inktoberDays(location) {
-	const max = 1;
+	const max = 2;
 	let length = 0;
 	for (let i = 0; i < max; i++) {
 		if (location.not(`#day-${i + 1}-Inktober`).length) {
