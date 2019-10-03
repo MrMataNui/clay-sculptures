@@ -59,7 +59,6 @@ h2 {
 
 #timeline {
 	width: 50em;
-	height: 600px;
 	overflow: hidden;
 	margin: 40px auto;
 	position: relative;
@@ -99,16 +98,13 @@ li#date2019 {
 
 #months {
 	width: 400px;
-	height: 600px;
 	overflow: hidden;
 	float: left;
 }
 
 #months li {
-	/* width: 400px; */
-	height: 600px;
 	list-style: none;
-	/* text-align: center; // add */
+	text-align: center; 
 }
 
 li[id^='2019']:not(.selected) {
