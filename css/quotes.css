@@ -15,13 +15,16 @@ blockquote::after {
 	content: close-quote;
 }
 
+q,
 .quotes {
 	quotes: '\2018''\2019';
 }
+q::before,
 .quotes::before {
 	content: open-quote;
 }
 
+q::after,
 .quotes::after {
 	content: close-quote;
 }

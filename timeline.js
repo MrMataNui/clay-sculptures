@@ -1,8 +1,6 @@
 $(() => {
 	// initialClass();
 
-	$('[class^=Inktober-day]').after('<br />');
-
 	$('[id^=2019]').click(function() {
 		onClick($(this));
 	});
@@ -12,8 +10,12 @@ $(() => {
 		inktober($(this));
 	});
 
+	const week = 1;
+	$('[id^=Week]').each(function() {
+		inktoberWeeks($(this), week);
+	});
 	$('[id$=Inktober]').each(function() {
-		inktoberDays($(this));
+		inktoberDays($(this), week);
 	});
 
 	// $('[id$=-year]').css('cursor', 'pointer');
@@ -28,8 +30,20 @@ function inktober(location) {
 	$(`div.${id}`).css('display', display);
 }
 
-function inktoberDays(location) {
-	const max = 2;
+function inktoberWeeks(location, week) {
+	let length = 0;
+	for (let i = 0; i < week; i++) {
+		if (location.not(`#Week${i + 1}`).length) {
+			length++;
+		}
+	}
+	if (length === week) {
+		location.css('display', 'none');
+	}
+}
+
+function inktoberDays(location, week) {
+	const max = week * 7;
 	let length = 0;
 	for (let i = 0; i < max; i++) {
 		if (location.not(`#day-${i + 1}-Inktober`).length) {

@@ -214,3 +214,9 @@ li[id^='2019'].selected {
 #prev.disabled {
 	opacity: 0.2;
 }
+
+.Inktober {
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}

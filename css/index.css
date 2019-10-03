@@ -16,12 +16,6 @@ body {
 	height: 2.5em;
 }
 
-.flex-container {
-	display: flex;
-	align-items: flex-end;
-	justify-content: space-between;
-}
-
 button[id^='lang-'] {
 	background-color: #8a5be2;
 	border-color: #8a2be2;
@@ -39,6 +33,10 @@ button[id^='lang-']:hover {
 
 .saira-stencil {
 	font-family: 'Saira Stencil One', cursive;
+}
+
+.flex {
+	display: flex;
 }
 
 .clearfix {
