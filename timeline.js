@@ -1,11 +1,8 @@
 $(() => {
-	// initialClass();
-
 	$('[id^=2019]').click(function() {
 		onClick($(this));
 	});
 
-	$('[class^=Inktober-day]').css('display', 'none');
 	$('[id$=-Inktober]').click(function() {
 		inktober($(this).children(':first'));
 	});
@@ -24,10 +21,9 @@ $(() => {
 
 function inktober(location) {
 	const id = location.attr('id');
-	const classDisplay = $(`[class^=${id}]`).css('display');
-	const display = classDisplay === 'none' ? 'block' : 'none';
-	$('[class^=Inktober-day]').css('display', 'none');
-	$(`div.${id}`).css('display', display);
+
+	$('[class^=Inktober-day]').removeClass('selected');
+	$(`div.${id}`).addClass('selected');
 }
 
 function inktoberImg(location, max, getPlace) {

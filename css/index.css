@@ -86,11 +86,11 @@ span[id$='-year'] {
 	padding: 0 22px;
 }
 
-/* div[id^='2019'] { */
-	/* width: 90%; */
-/* } */
+#dates [id^='2019'] div {
+	width: 90%;
+}
 
-/* div[id^='2019']:hover, */
+#dates [id^='2019'] div:hover,
 [id$='-Inktober']:hover {
 	border: 1px solid white;
 }

@@ -166,6 +166,15 @@ li[id^='2019'].selected {
 	position: absolute;
 }
 
+[class^='Inktober-day'] {
+	display: none;
+	width: 110%;
+}
+
+.selected {
+	display: block;
+}
+
 #grad_top {
 	top: 0;
 	/* background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_top.png') repeat-x; */
