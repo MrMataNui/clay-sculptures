@@ -104,7 +104,7 @@ li#date2019 {
 
 #months li {
 	list-style: none;
-	text-align: center; 
+	text-align: center;
 }
 
 li[id^='2019']:not(.selected) {
@@ -154,7 +154,7 @@ li[id^='2019'].selected {
 
 #months li p {
 	font-size: 14px;
-	margin: 10px 20px;
+	margin: 10px 40px;
 	font-weight: normal;
 	line-height: 22px;
 	text-shadow: #000 1px 1px 2px;
