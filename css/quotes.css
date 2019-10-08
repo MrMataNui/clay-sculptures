@@ -7,23 +7,17 @@ blockquote {
 	quotes: '“' '”';
 }
 
-blockquote::before {
-	content: open-quote;
-}
-
-blockquote::after {
-	content: close-quote;
-}
-
-q,
-.quotes {
+q, .quotes {
 	quotes: '‘' '’';
 }
+
+blockquote::before,
 q::before,
 .quotes::before {
 	content: open-quote;
 }
 
+blockquote::after,
 q::after,
 .quotes::after {
 	content: close-quote;
