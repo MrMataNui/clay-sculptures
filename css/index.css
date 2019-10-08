@@ -54,8 +54,7 @@ button[id^='lang-'] {
 span[id$='-year'] { font-size: 120%; }
 
 [id^='Inktober-day'] { width: 70%; margin: 0 auto; }
-
-[id$='-Inktober'] { cursor: pointer; padding: 0 20px; }
+[id$='-Inktober'] { cursor: pointer; padding: 0 15px; }
 
 #dates div[id^='2019']:hover,
 [id$='-Inktober']:hover {

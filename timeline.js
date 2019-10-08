@@ -15,7 +15,14 @@ $(() => {
 
 	const weeks = 2;
 	const days = weeks * 7;
-	$('[id^=Week]').before('<br />');
+
+	$('[id^=Week]').each(function() {
+		const id = $(this).attr('id');
+		let weekRegex;
+
+		for (let i = 0; i < weeks; i++) { weekRegex = RegExp(`^Week${i + 1}`); }
+		if (weekRegex.test(id)) { $(this).before('<br />'); }
+	});
 	$('[id^=Week]').each(function() { inktoberImg($(this), weeks, ['#Week', '']); });
 	$('[id$=Inktober]').each(function() { inktoberImg($(this), days, ['#day-', '-Inktober']); });
 
